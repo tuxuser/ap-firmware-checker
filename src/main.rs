@@ -3,6 +3,7 @@ mod ap;
 use std::env;
 use std::time::Duration;
 use twilight_http::Client;
+use twilight_model::channel::message::embed::EmbedFooter;
 use twilight_model::channel::message::{Embed, embed::EmbedField};
 use twilight_model::id::{marker::ChannelMarker, Id};
 
@@ -12,7 +13,7 @@ async fn announce_new_firmware(client: &Client, fw_info: ap::Firmware, channel_i
     let embed = Embed {
         author: None,
         color: Some(123),
-        description: None,
+        description: Some("A new firmware just got released!!!".to_string()),
         fields: vec![
             EmbedField { name: "Id".to_owned(), value: fw_info.id, inline: false },
             EmbedField { name: "Version".to_owned(), value: fw_info.version, inline: false },
@@ -22,13 +23,17 @@ async fn announce_new_firmware(client: &Client, fw_info: ap::Firmware, channel_i
             EmbedField { name: "MD5".to_owned(), value: fw_info.details.md5_hash, inline: false },
             EmbedField { name: "URL".to_owned(), value: fw_info.details.url, inline: false },
         ],
-        footer: None,
+        footer: Some(EmbedFooter {
+            icon_url: None,
+            proxy_icon_url: None,
+            text: "Powered by https://github.com/tuxuser/ap-firmware-checker".to_string()
+        }),
         image: None,
         kind: "rich".to_owned(),
         provider: None,
         thumbnail: None,
         timestamp: None,
-        title: Some("New AP firmware available".to_owned()),
+        title: Some("New Analogue Pocket firmware available".to_owned()),
         url: Some(ap::BASE_URL.to_owned()),
         video: None,
     };
