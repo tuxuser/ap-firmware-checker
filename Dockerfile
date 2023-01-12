@@ -1,12 +1,19 @@
-FROM ekidd/rust-musl-builder AS builder
+# Builder image
+FROM rust:alpine AS builder
+RUN apk update
+RUN apk add --no-cache openssl-dev musl-dev
+
+WORKDIR /code
 ADD Cargo.toml ./
 ADD src ./src
-RUN sudo chown -R rust:rust /home/rust/src
 RUN cargo build --release
-RUN strip /home/rust/src/target/x86_64-unknown-linux-musl/release/ap_firmware_bot
 
-FROM scratch AS runner
-COPY --from=builder /home/rust/src/target/x86_64-unknown-linux-musl/release/ap_firmware_bot \
+RUN ls -a -R /code
+RUN strip /code/target/release/ap_firmware_bot
+
+# Runner image
+FROM alpine:latest AS runner
+COPY --from=builder /code/target/release/ap_firmware_bot \
   /ap_firmware_bot
 
 ENTRYPOINT [ "/ap_firmware_bot" ]
