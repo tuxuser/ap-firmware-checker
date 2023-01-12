@@ -1,0 +1,127 @@
+{
+    "props": {
+        "pageProps": {
+            "product": {
+                "title": "Pocket",
+                "slug": "pocket"
+            },
+            "firmware": {
+                "id": "50301261",
+                "publishedAt": "2022-11-05",
+                "version": "1.1-beta-6",
+                "details": {
+                    "version": "1.1-beta-6",
+                    "filename": "pocket_firmware_B_8.bin",
+                    "filesize": "54.5MB",
+                    "md5_hash": "c4d31aaf88477e6f7278c13986e5f9f4",
+                    "url": "https://assets.analogue.co/firmware/c4d31aaf88477e6f7278c13986e5f9f4/pocket_firmware_B_8.bin"
+                }
+            },
+            "manual": {
+                "url": "https://assets.analogue.co/pdf/f48dbccc2a7c529e3ef677db3b4ab9d8/Analogue+Pocket+User+Manual+v1.2.pdf",
+                "size": "0.17Mb"
+            },
+            "accessories": [
+                {
+                    "title": "Dock",
+                    "slug": "dock",
+                    "url": "/support/dock",
+                    "external": false
+                },
+                {
+                    "title": "Pocket Game Gear Adapter",
+                    "url": "https://assets.analogue.co/pdf/8caa7545b754e3a733762506361b1203/Analogue+Pocket+-+Game+Gear+Adapter.pdf",
+                    "external": true
+                },
+                {
+                    "title": "Hard Case",
+                    "url": "https://assets.analogue.co/pdf/0fbde4890592b5f4b1ff8bcd7b7ff171/Analogue+Pocket+-+Hard+Case.pdf",
+                    "external": true
+                },
+                {
+                    "title": "Screen Protector",
+                    "url": "https://assets.analogue.co/pdf/150f1b1adcccde8026031ea48770fef5/Analogue+Pocket+-+Screen+Protector.pdf",
+                    "external": true
+                },
+                {
+                    "title": "Pocket to Pocket Link Cable",
+                    "url": "https://assets.analogue.co/pdf/9a9fec60c4f48c549c915607d9ae36e9/Analogue+Pocket+-+Pocket+to+Pocket+Link+Cable.pdf",
+                    "external": true
+                },
+                {
+                    "title": "Fast Charging USB-C Power Supply",
+                    "url": "https://assets.analogue.co/pdf/3959b4b1b9b1277d60dd090055bef771/Analogue+Pocket+-+Fast+Charging+USB-C.pdf",
+                    "external": true
+                },
+                {
+                    "title": "USB-C Cable",
+                    "url": "https://assets.analogue.co/pdf/095f422a356246b9ae22ad3e1869511f/Analogue+Pocket+-+USB-C+Cable.pdf",
+                    "external": true
+                }
+            ],
+            "resources": [
+                {
+                    "title": "Pocket Preorder FAQ",
+                    "slug": "pocket-preorder-faq",
+                    "url": "/support/resource/pocket-preorder-faq",
+                    "external": false
+                },
+                {
+                    "title": "Pocket FAQ",
+                    "slug": "pocket-faq",
+                    "url": "/support/resource/pocket-faq",
+                    "external": false
+                },
+                {
+                    "title": "How to play Spacewar! on Analogue Pocket",
+                    "slug": "how-to-play-spacewar-on-analogue-pocket",
+                    "url": "/support/resource/how-to-play-spacewar-on-analogue-pocket",
+                    "external": false
+                },
+                {
+                    "title": "How to clean game cartridges",
+                    "slug": "how-to-clean-game-cartridges",
+                    "url": "/support/resource/how-to-clean-game-cartridges",
+                    "external": false
+                },
+                {
+                    "title": "Troubleshooting your Pocket",
+                    "slug": "troubleshooting-your-pocket",
+                    "url": "/support/resource/troubleshooting-your-pocket",
+                    "external": false
+                },
+                {
+                    "title": "Dock FAQ",
+                    "slug": "dock-faq",
+                    "url": "/support/resource/dock-faq",
+                    "external": false
+                },
+                {
+                    "title": "Pocket Accessory FAQ",
+                    "slug": "pocket-accessory-faq",
+                    "url": "/support/resource/pocket-accessory-faq",
+                    "external": false
+                },
+                {
+                    "title": "Nanoloop Guide",
+                    "url": "https://assets.analogue.co/pdf/17afc5c057b7f83154e3137001cfa2ab/Nanoloop+Pocket+Guide+v1.0.pdf",
+                    "external": true
+                },
+                {
+                    "title": "Open Source Attributions",
+                    "url": "https://analogue.link/pocket-opensource-attribution",
+                    "external": true
+                }
+            ]
+        },
+        "__N_SSG": true
+    },
+    "page": "/support/[product]",
+    "query": {
+        "product": "pocket"
+    },
+    "buildId": "xbCTLRlfP29xsQViFBr5o",
+    "isFallback": false,
+    "gsp": true,
+    "scriptLoader": []
+}

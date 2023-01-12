@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ap_firmware_checker_bot:
+    image: ap_firmware_checker_bot:local
+    env_file:
+      - .env
+    environment:
+      - BOT_TOKEN
+      - CHANNEL_ID
+    restart: unless-stopped
